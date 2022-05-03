@@ -16,4 +16,11 @@ public class Pedra {
 	public int getLadoB() {
 		return ladoB;
 	}
+
+	@Override
+	public String toString() {
+		return ladoA + " " + ladoB;
+	}
+	
+	
 }
