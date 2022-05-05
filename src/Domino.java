@@ -3,18 +3,19 @@ import java.util.Random;
 
 
 public class Domino {
-	private Pedra[] pedras;
+	private static Pedra[] pedras;
 	private int topo = 0;
 
 	public Domino() {
 
-		this.pedras = new Pedra[6];
+		this.pedras = new Pedra[28];
 		
 		int cont = 0;
+		int salvaPedras = 0;
 		for (int i = 6; i >= 0; i--) {
 			for ( int j = 0; j <= 6 - cont; j++) {
-				System.out.println(i + " " + j);
-				pedras[cont] = new Pedra(i, j);
+				pedras[salvaPedras] = new Pedra(i, j);
+				salvaPedras++;
 			}
 			cont++;
 		}
