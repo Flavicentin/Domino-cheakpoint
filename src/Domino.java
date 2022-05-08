@@ -47,6 +47,7 @@ public class Domino {
 
 	public static void main(String[] args) {
 		Domino mao = new Domino();
+		mao.mistura();
 		mao.imprime();
 	}
 }
